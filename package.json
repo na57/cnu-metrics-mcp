@@ -1,0 +1,29 @@
+{
+  "name": "cnu-metrics-mcp",
+  "version": "0.1.0",
+  "description": "诚勤指标中枢 OpenAPI 的 MCP 服务器：场景 / 指标清单 / 指标取值 / 明细数据 / 维度取值查询（只读）",
+  "type": "module",
+  "bin": {
+    "cnu-metrics-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "e2e": "node scripts/e2e.mjs"
+  },
+  "engines": {
+    "node": ">=18.17"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.18.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.7.0"
+  }
+}
